@@ -6,12 +6,6 @@ It is a work in progress at the moment, any help welcome!
 
 ## Installation
 
-### Standalone / RequireJS / AMD
-
-Download [dist/vue-gestures.js](dist/vue-gestures.js) and include it in your HTML page.
-
-vue-gestures is available under the name *vueGestures* for AMD module loaders, or is directly set on `window.vueGestures`.
-
 ### Browserify (npm)
 
 ```
@@ -22,12 +16,19 @@ $ npm install vue-gestures
 
 component will follow soon.
 
+### Standalone / RequireJS / AMD
+
+Download [dist/vue-gestures.js](dist/vue-gestures.js) and include it in your HTML page.
+
+vue-gestures is available under the name *vueGestures* for AMD module loaders, or is directly set on `window.vueGestures`.
+
 ## Example
 
 vue-gestures can be loaded into your ViewModel with [`Vue.plugin`](http://vuejs.org/guide/plugin.html).
 
 ```js
-Vue.use('vue-gestures');
+var vueGestures = require('vue-gestures'); // with Browserify / CommonJS
+Vue.use(vueGestures);
 ```
 
 ```html
@@ -53,7 +54,7 @@ Be careful: every default browser behavior is prevented, including the scroll.
 Some parameters are applied to all the directives. You can also add these parameters on a directive level, e.g.
 
 ```js
-Vue.use('vue-gestures', {
+Vue.use(vueGestures, {
   touch: { prefix: 'gestures' }
 });
 ```
@@ -63,7 +64,7 @@ Vue.use('vue-gestures', {
 Adds a prefix to the directives loaded by the plugin.
 
 ```js
-Vue.use('vue-gestures', { prefix: 'gestures' });
+Vue.use(vueGestures, { prefix: 'gestures' });
 ```
 
 ```html
