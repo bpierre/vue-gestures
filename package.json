@@ -1,0 +1,22 @@
+{
+  "name": "vue-gestures",
+  "description": "Collection of Vue.js directives for touch gestures",
+  "version": "0.0.1",
+  "author": "Pierre Bertet <bonjour@pierrebertet.net> (http://pierrebertet.net/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bpierre/vue-gestures.git"
+  },
+  "main": "index.js",
+  "scripts": {
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "vue": "0.x"
+  },
+  "devDependencies": {
+    "browserify": "~3.30.1",
+    "watchify": "~0.6.1"
+  }
+}

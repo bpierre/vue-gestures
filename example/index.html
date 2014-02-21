@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body, textarea {
+      font: 24px/36px sans-serif;
+      color: #444;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    a, textarea {
+      display: block;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    a {
+      background: #EEE;
+      cursor: pointer;
+      -moz-user-select: none;
+      user-select: none;
+      border-bottom: 2px solid #AAA;
+      border-right: 2px solid #AAA;
+      border-top: 1px solid #CCC;
+      border-left: 1px solid #CCC;
+    }
+    .buttons {
+      float: left;
+      width: calc(50% - 30px);
+      margin-left: 20px;
+    }
+    textarea {
+      float: right;
+      width: calc(50% - 30px);
+      height: calc(100% - 40px);
+      margin-right: 20px;
+      border: 1px solid #CCC;
+      border-radius: 0;
+      resize: none;
+    }
+  </style>
+</head>
+<body id="app">
+
+<div class="buttons">
+  <a v-on="click: log('click')">click</a>
+  <a v-tap="log('tap')">tap</a>
+  <a v-touch="log('touch')">touch</a>
+</div>
+
+<textarea v-text="logText" readonly></textarea>
+
+<script src="dist/example.js"></script>
+
+</body>
+</html>
