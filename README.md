@@ -4,6 +4,9 @@ vue-gestures is a collection of [Vue.js](http://vuejs.org/guide/) directives for
 
 It is a work in progress at the moment, any help welcome!
 
+<p align="center"><img width="274" height="400" alt="vue-gesture illustration" src="http://scri.ch/may.png"></p>
+
+
 ## Installation
 
 ### Browserify (npm)
@@ -95,3 +98,7 @@ Vue.use(gestures.touch, {
 ## License
 
 [MIT](http://pierre.mit-license.org/)
+
+## Special thanks
+
+Illustration made by [Raphaël Bastide](http://raphaelbastide.com/) with [scri.ch](http://scri.ch/).
