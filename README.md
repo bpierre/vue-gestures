@@ -4,7 +4,7 @@ vue-gestures is a collection of [Vue.js](http://vuejs.org/guide/) directives for
 
 It is a work in progress at the moment, any help welcome!
 
-<p align="center"><img width="274" height="400" alt="vue-gesture illustration" src="http://scri.ch/may.png"></p>
+<p align="center"><img width="274" height="400" alt="vue-gesture illustration" src="http://scri.ch/may-2x.png"></p>
 
 
 ## Installation
